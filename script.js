@@ -71,19 +71,19 @@ filterBtns.forEach(btn => {
 
 const form = document.getElementById('contact-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Message Sent!';
-    btn.style.background = '#059669';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.style.background = '';
-      btn.disabled = false;
-      form.reset();
-    }, 3000);
-  });
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+const btn = form.querySelector('button[type="submit"]');
+btn.textContent = 'Message Sent!';
+btn.style.background = '#059669';
+btn.disabled = true;
+setTimeout(() => {
+btn.textContent = 'Send Message';
+btn.style.background = '';
+btn.disabled = false;
+form.reset();
+}, 3000);
+});
 }
 
 
