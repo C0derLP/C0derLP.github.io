@@ -445,15 +445,11 @@
 
     <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="2f1ae7d8-a955-445f-8c24-cd8f70f79dd7">
-      <div class="form-row">
-       <input type="text" name="name" placeholder="Full Name" required>
-       <input type="email" name="email" placeholder="Email Address" required>
-  </div>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit Form</button>
 </form>
-
 
     </div>
   </section>
